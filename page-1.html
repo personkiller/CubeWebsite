@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page 1</title>
+  </head>
+    <div class="main-container" style="border: none;">
+      <footer>
+        <button class="prev" onclick="GotoPage(0)">Last Page</button>
+        <button class="next" onclick="GotoPage(2)">Next Page</button>
+        <div class="flex-horizontal" style="width: 300vw">
+          <div class="card square-15" data-link="">
+            <h1 class="card-header">Here's a quick timeline.</h1>
+            <p><br/><br/> Left click to move on to the next box.</p>
+          </div>
+          <div class="card square-15" data-link="">
+            <h1 class="card-header">Quick Tip</h1>
+            <p>You can click on some of the boxes to be sent to a related article if you want to learn more.</p>
+          </div>
+          <div class="card square-15" data-link="https://invention.si.edu/twist-fate-invention-rubik-s-cube">
+            <h1 class="card-header">1974</h1>
+            <p>The first iteration of the Rubik's Cube is invented by Hungarian professor of architecture Ernő Rubik.</p>
+          </div>
+          <div class="card square-15" data-link="">
+            <p>Here's a picture of it.</p>
+            <img  class="original-cube" src="https://static01.nyt.com/images/2020/09/18/books/15Rubik2/15Rubik2-mobileMasterAt3x.jpg"/>
+          </div>
+          <div class="card square-15" data-link="">
+            <h1 class="card-header">1977</h1>
+            <p>
+              The Rubik's Cube finally hits stores! ...Only in Budapest. And it's not the "Rubik's Cube" yet, at the moment it is called "Büvös Kocka", which is Hungarian for "Magic Cube". Bonus fun fact: Chinese cube manufacturers still call their cubes "Magic Cube".
+            </p>
+          </div>
+          <div class="card square-15" data-link="https://www.speedsolving.com/wiki/index.php/Ideal_Toys">
+            <h1 class="card-header">Early 1980s</h1>
+            <p>
+              Word starts to spread of Professor Rubik's cube. The company Ideal Toys sees massive potential in the cube and agrees to sell it worlwide as, you guessed it, the Rubik's Cube. 
+            </p>
+          </div>
+          <div class="card square-15" data-link="https://www.youtube.com/watch?v=m4qoeJMPv0Y">
+            <h1 class="card-header">June 5th, 1982</h1>
+            <p>
+              The first world Rubik's Cube championships is held in Budapest, the birthplace of the cube. American Minh Thai was victorious with a fastest single solve of 22.95 seconds. This is often considered the first official Rubik's Cube world record. Another official competition would not be held until 2003.
+            </p>
+          </div>
+          <div class="card square-15" data-link="https://www.worldcubeassociation.org/competitions/DutchOpen2007">
+            <h1 class="card-header">Oct. 14, 2007</h1>
+            <p>
+              Dutch Erik Akkersdijk completes the first solve under 10 seconds in competition, setting the world record for a single solve with a 9.77. This record would be broken many times in the next 14 years, but regardless, it was a huge milestone.
+            </p>
+          </div>
+          <div class="card square-15" data-link="">
+            <h1 class="card-header">
+              July 2011
+            </h1>
+            <p>
+              Release of the Dayan Zhanchi. This was the first cube that was universally accepted as better than the official Rubik's branded cube. It was used to break many world records and set the standard for serious solvers to use higher quality "knock-off" cubes.
+            </p>
+          </div>
+          <div class="card square-15" data-link="">
+            <h1 class="card-header">Nov. 21, 2015</h1>
+            <p>
+              Lucas Etter completes the first official solve in under 5 seconds: an unbelievable 4.90 second time. The world record had already been broken twice before at that same competition, so there must have been some sort of good luck charm at the venue.
+            </p>
+          </div>
+        </div>
+    </footer>
+
+  </div>
+  </body>
+
+  <script src="./PageManager.js"></script>
+  <script src="./TimelineLinks.js"></script>
+  <script src="./ScrollWithKeys.js"></script>
+
+  <link rel="stylesheet" href="./DisableScroll.css">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</html>
